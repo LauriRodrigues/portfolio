@@ -1,0 +1,9 @@
+import styled from 'styled-components'
+
+export const Container = styled.footer`
+  p {
+    padding: 1.5rem 2rem;
+    text-align: center;
+    color: ${({theme}) => theme.COLORS.LIGHT_300};
+  }
+`
