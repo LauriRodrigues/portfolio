@@ -94,9 +94,6 @@ export const Container = styled.header`
 
   .menu {
     z-index:1000000;
-    font-family: 'Fira Code', monospace;
-    font-size: 1.8rem;
-    font-weight:600; 
     width:100%; 
     padding-top: 3rem;
     background-color: ${({theme}) => theme.COLORS.BLUE_300};
@@ -111,7 +108,13 @@ export const Container = styled.header`
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 4rem; 
+  }
+
+  .menu ul li {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.8rem;
+    font-weight:600;
   }
 
   .menu ul li a {
@@ -127,7 +130,12 @@ export const Container = styled.header`
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 3rem 6rem;
 
+    .header, .menu {
+      padding: initial;
+    }
+    
     button {
       display: none;
     }
@@ -137,14 +145,43 @@ export const Container = styled.header`
       position: static;
       height: fit-content;
       opacity: 1;
-      padding-top: 0;
-      padding-right: 5rem;
       display: flex;
       justify-content: flex-end;
     }
 
     .menu ul {
       flex-direction: row;
+      gap: 1.5rem;
+    }
+
+    .menu ul li {
+      font-size: 2rem;
+      font-weight: 300;
+      padding: .6rem 1.3rem;
+      transition: all .2s;
+      border-radius: .8rem;
+    }
+
+    .menu ul li:hover {
+      font-weight: 600;
+      background: ${({theme}) => theme.COLORS.BLUE_200};
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+      cursor: pointer;
+    }
+
+    .menu ul li:active {
+      font-weight: 600;
+      background: ${({theme}) => theme.COLORS.BLUE_400};
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50) inset;
+      cursor: pointer;
+    }
+
+    .menu ul li a span {
+     color: ${({theme}) => theme.COLORS.LIGHT_100};
+    }
+
+    .menu ul li:hover > a span {
+     color: ${({theme}) => theme.COLORS.PINK_200};
     }
   }
 
