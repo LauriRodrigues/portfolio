@@ -4,7 +4,7 @@ import { DEVICE } from '../../styles/brakepoints'
 export const Container = styled.header`
   width: 100%;
   
-  header {
+  .header {
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -124,7 +124,28 @@ export const Container = styled.header`
   }
 
   ${DEVICE.lg} {
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    button {
+      display: none;
+    }
+
+    .menu {
+      z-index: 1;
+      position: static;
+      height: fit-content;
+      opacity: 1;
+      padding-top: 0;
+      padding-right: 5rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .menu ul {
+      flex-direction: row;
+    }
   }
 
 `
