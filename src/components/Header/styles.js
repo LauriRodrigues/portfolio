@@ -182,7 +182,8 @@ export const Container = styled.header`
       color: ${({ theme }) => theme.COLORS.LIGHT_100};
     }
 
-    .menu ul li a:hover > a span, .menu ul li a.active span {
+    .menu ul li:hover > a span,
+    .menu ul li a.active span {
       color: ${({ theme }) => theme.COLORS.PINK_200};
     }
   }
