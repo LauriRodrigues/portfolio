@@ -5,7 +5,6 @@ import { AboutMe } from './pages/AboutMe'
 import { Projects } from './pages/Projects'
 import { Contact } from './pages/Contact'
 
-
 export function Router() {
   return (
     <Routes>

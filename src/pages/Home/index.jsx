@@ -10,16 +10,20 @@ export function Home() {
   return (
     <Container>
       <main>
-        <div className="box boxImage">
+        <div className="boxImage">
           <img src={HomeImage} alt="avatar Lauri Rodrigues" />
+
+          <div className="textBox">
+            <h1>
+              Lauri <br /> Rodrigues
+            </h1>
+
+            <p>
+              {' '}
+              <span>&gt;</span> Desenvolvedora front-end
+            </p>
+          </div>
         </div>
-
-        <h1>Lauri Rodrigues</h1>
-
-        <p>
-          {' '}
-          <span>&gt;</span> Desenvolvedora front-end
-        </p>
 
         <div className="links">
           <a

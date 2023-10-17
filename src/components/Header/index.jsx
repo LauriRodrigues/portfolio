@@ -29,7 +29,7 @@ export function Header() {
         </button>
       </div>
 
-      <div className="menu">
+      <div className="menu" onClick={toggleMenu}>
         <ul>
           <li>
             <NavLink to="/" title="Home">
