@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Container } from './styles'
+import { NavLink } from 'react-router-dom'
 import LogoSVG from '../../assets/Logo.svg'
 
 export function Header() {
@@ -11,16 +12,15 @@ export function Header() {
 
   return (
     <Container isOpen={isOpen}>
-  
       <div className="header">
         <img src={LogoSVG} alt="Logomarca escrito <LR/>" />
 
-        <button 
+        <button
           className="buttonMenu"
           onClick={toggleMenu}
           aria-label="Abrir o Menu"
         >
-          <div id="navIcon" className={isOpen ? 'open' : ''} >
+          <div id="navIcon" className={isOpen ? 'open' : ''}>
             <span></span>
             <span></span>
             <span></span>
@@ -31,13 +31,28 @@ export function Header() {
 
       <div className="menu">
         <ul>
-          <li><a href="/home"><span>#</span>início</a></li>
-          <li><a href="/sobre-mim"><span>#</span>sobre-mim</a></li>
-          <li><a href="/projetos"><span>#</span>projetos</a></li>
-          <li><a href="/contato"><span>#</span>contato</a></li>
+          <li>
+            <NavLink to="/" title="Home">
+              <span>#</span>início
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/sobre-mim" title="Sobre mim">
+              <span>#</span>sobre-mim
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/projetos" title="Projetos">
+              <span>#</span>projetos
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contato" title="Contato">
+              <span>#</span>contato
+            </NavLink>
+          </li>
         </ul>
       </div>
-      
     </Container>
   )
 }

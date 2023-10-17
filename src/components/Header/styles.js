@@ -3,7 +3,7 @@ import { DEVICE } from '../../styles/brakepoints'
 
 export const Container = styled.header`
   width: 100%;
-  
+
   .header {
     height: fit-content;
     display: flex;
@@ -27,38 +27,39 @@ export const Container = styled.header`
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
- }
+  }
 
   #navIcon span {
     display: block;
     position: absolute;
-    height: .3rem;
+    height: 0.3rem;
     width: 100%;
-    background-color: ${({theme}) => theme.COLORS.LIGHT_100};
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
-    border-radius: .9rem;
+    background-color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    border-radius: 0.9rem;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
   }
 
   #navIcon span:nth-child(1) {
     top: 0px;
   }
 
-  #navIcon span:nth-child(2),#navIcon span:nth-child(3) {
+  #navIcon span:nth-child(2),
+  #navIcon span:nth-child(3) {
     top: 1rem;
   }
 
@@ -93,14 +94,14 @@ export const Container = styled.header`
   }
 
   .menu {
-    z-index:1000000;
-    width:100%; 
+    z-index: 1000000;
+    width: 100%;
     padding-top: 3rem;
-    background-color: ${({theme}) => theme.COLORS.BLUE_300};
-    position:absolute; 
-    text-align:center;
-    height: 100vh;
-    opacity: ${props => props.isOpen ? '1' : '0'};
+    background-color: ${({ theme }) => theme.COLORS.BLUE_300};
+    position: absolute;
+    text-align: center;
+    height: calc(100vh - 10rem);
+    opacity: ${(props) => (props.isOpen ? '1' : '0')};
     transition: opacity 0.4s ease;
   }
 
@@ -108,22 +109,22 @@ export const Container = styled.header`
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 4rem; 
+    gap: 4rem;
   }
 
   .menu ul li {
     font-family: 'Fira Code', monospace;
     font-size: 1.8rem;
-    font-weight:600;
+    font-weight: 600;
   }
 
   .menu ul li a {
-    color: ${({theme}) => theme.COLORS.LIGHT_100};
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
   }
 
-  .menu ul li a span{
-    color: ${({theme}) => theme.COLORS.PINK_200};
+  .menu ul li a span {
+    color: ${({ theme }) => theme.COLORS.PINK_200};
   }
 
   ${DEVICE.lg} {
@@ -132,10 +133,11 @@ export const Container = styled.header`
     align-items: center;
     padding: 3rem 6rem;
 
-    .header, .menu {
+    .header,
+    .menu {
       padding: initial;
     }
-    
+
     button {
       display: none;
     }
@@ -157,32 +159,31 @@ export const Container = styled.header`
     .menu ul li {
       font-size: 2rem;
       font-weight: 300;
-      padding: .6rem 1.3rem;
-      transition: all .2s;
-      border-radius: .8rem;
+      padding: 0.6rem 1.3rem;
+      transition: all 0.2s;
+      border-radius: 0.8rem;
     }
 
     .menu ul li:hover {
       font-weight: 600;
-      background: ${({theme}) => theme.COLORS.BLUE_200};
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+      background: ${({ theme }) => theme.COLORS.BLUE_200};
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
       cursor: pointer;
     }
 
     .menu ul li:active {
       font-weight: 600;
-      background: ${({theme}) => theme.COLORS.BLUE_400};
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50) inset;
+      background: ${({ theme }) => theme.COLORS.BLUE_400};
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5) inset;
       cursor: pointer;
     }
 
     .menu ul li a span {
-     color: ${({theme}) => theme.COLORS.LIGHT_100};
+      color: ${({ theme }) => theme.COLORS.LIGHT_100};
     }
 
     .menu ul li:hover > a span {
-     color: ${({theme}) => theme.COLORS.PINK_200};
+      color: ${({ theme }) => theme.COLORS.PINK_200};
     }
   }
-
 `

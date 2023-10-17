@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 export const Container = styled.footer`
   p {
-    padding: 1.5rem 2rem;
+    padding-inline: 2rem;
+    padding-bottom: 1rem;
     text-align: center;
-    color: ${({theme}) => theme.COLORS.LIGHT_300};
+    color: ${({ theme }) => theme.COLORS.LIGHT_300};
   }
 `
