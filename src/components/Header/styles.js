@@ -156,7 +156,7 @@ export const Container = styled.header`
       gap: 1.5rem;
     }
 
-    .menu ul li {
+    .menu ul li a {
       font-size: 2rem;
       font-weight: 300;
       padding: 0.6rem 1.3rem;
@@ -164,14 +164,14 @@ export const Container = styled.header`
       border-radius: 0.8rem;
     }
 
-    .menu ul li:hover {
+    .menu ul li a:hover {
       font-weight: 600;
       background: ${({ theme }) => theme.COLORS.BLUE_200};
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
       cursor: pointer;
     }
 
-    .menu ul li:active {
+    .menu ul li a.active {
       font-weight: 600;
       background: ${({ theme }) => theme.COLORS.BLUE_400};
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5) inset;
@@ -182,7 +182,7 @@ export const Container = styled.header`
       color: ${({ theme }) => theme.COLORS.LIGHT_100};
     }
 
-    .menu ul li:hover > a span {
+    .menu ul li a:hover > a span, .menu ul li a.active span {
       color: ${({ theme }) => theme.COLORS.PINK_200};
     }
   }
