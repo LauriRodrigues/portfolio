@@ -3,10 +3,13 @@ import { DEVICE } from '../../styles/brakepoints'
 
 export const Container = styled.div`
   min-height: calc(100vh - 16.2rem);
+  display: flex;
 
   main {
+    width: 100%;
     max-width: 140rem;
     margin-inline: auto;
+    margin-block: auto;
     height: 100%;
     padding: 3.5rem 2rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
@@ -69,17 +72,12 @@ export const Container = styled.div`
   }
 
   ${DEVICE.lg} {
-    display: flex;
-    width: 100%;
-
     main {
-      width: 100%;
       padding: 3.5rem 6rem;
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
       justify-content: space-between;
-      margin-block: auto;
       gap: 5rem;
 
       .links {
