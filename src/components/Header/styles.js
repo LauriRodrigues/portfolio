@@ -166,15 +166,15 @@ export const Container = styled.header`
 
     .menu ul li a:hover {
       font-weight: 600;
-      background: ${({ theme }) => theme.COLORS.BLUE_200};
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+      background: ${({ theme }) => theme.COLORS.BLUE_400};
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.6));
       cursor: pointer;
     }
 
     .menu ul li a.active {
       font-weight: 600;
       background: ${({ theme }) => theme.COLORS.BLUE_400};
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5) inset;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.6) inset;
       cursor: pointer;
     }
 

@@ -98,6 +98,7 @@ export const Container = styled.div`
 
         a:hover {
           background-color: ${({ theme }) => theme.COLORS.PINK_200};
+          transform: scale(1.1);
         }
       }
 
