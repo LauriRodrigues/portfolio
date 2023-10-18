@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { DEVICE } from '../../styles/brakepoints'
 
 export const Container = styled.div`
-  height: calc(100vh - 16.2rem);
+  min-height: calc(100vh - 16.2rem);
 
   main {
     max-width: 140rem;
@@ -14,10 +14,11 @@ export const Container = styled.div`
     .boxImage {
       display: flex;
       justify-content: center;
+      align-items: center;
       flex-direction: column;
-      width: 100%;
+      max-width: 55rem;
       height: 29rem;
-      margin-bottom: 25rem;
+      margin-inline: auto;
       background-color: ${({ theme }) => theme.COLORS.PINK_100_BOX};
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       border-radius: 5rem;
@@ -59,14 +60,20 @@ export const Container = styled.div`
       align-items: center;
       justify-content: center;
       gap: 1.5rem;
-      margin-top: 6rem;
+      margin-top: 24rem;
 
       a img {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
       }
     }
+  }
 
-    ${DEVICE.lg} {
+  ${DEVICE.lg} {
+    display: flex;
+    width: 100%;
+
+    main {
+      width: 100%;
       padding: 3.5rem 6rem;
       display: flex;
       flex-direction: row-reverse;
@@ -96,7 +103,8 @@ export const Container = styled.div`
 
       .boxImage {
         position: initial;
-        max-width: 105rem;
+        width: 100%;
+        max-width: 100rem;
         flex-direction: row;
         align-items: center;
         margin-bottom: 0;
