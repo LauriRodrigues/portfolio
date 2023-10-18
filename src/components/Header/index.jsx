@@ -29,25 +29,25 @@ export function Header() {
         </button>
       </div>
 
-      <div className="menu" onClick={toggleMenu}>
+      <div className="menu">
         <ul>
           <li>
-            <NavLink to="/" title="Home">
+            <NavLink to="/" title="Home" onClick={toggleMenu}>
               <span>#</span>início
             </NavLink>
           </li>
           <li>
-            <NavLink to="/sobre-mim" title="Sobre mim">
+            <NavLink to="/sobre-mim" title="Sobre mim" onClick={toggleMenu}>
               <span>#</span>sobre-mim
             </NavLink>
           </li>
           <li>
-            <NavLink to="/projetos" title="Projetos">
+            <NavLink to="/projetos" title="Projetos" onClick={toggleMenu}>
               <span>#</span>projetos
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contato" title="Contato">
+            <NavLink to="/contato" title="Contato" onClick={toggleMenu}>
               <span>#</span>contato
             </NavLink>
           </li>
