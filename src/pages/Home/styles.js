@@ -12,7 +12,6 @@ export const Container = styled.div`
     margin-block: auto;
     height: 100%;
     padding: 3.5rem 2rem;
-    color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
     .boxImage {
       display: flex;
