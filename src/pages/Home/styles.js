@@ -18,9 +18,10 @@ export const Container = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      max-width: 55rem;
+      max-width: 60rem;
       height: 29rem;
       margin-inline: auto;
+      margin-bottom: 24rem;
       background-color: ${({ theme }) => theme.COLORS.PINK_100_BOX};
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       border-radius: 5rem;
