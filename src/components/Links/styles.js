@@ -6,11 +6,17 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
-  margin-top: 24rem;
+  gap: 1.7rem;
 
   ${DEVICE.lg} {
-    flex-direction: column;
+    &.column {
+      flex-direction: column;
+    }
+
+    &.row {
+      gap: 4rem;
+    }
+
     margin-top: 0;
   }
 `

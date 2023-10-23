@@ -55,7 +55,7 @@ export function AboutMe() {
           <IconsGroup groupType="curiositiesIcons" />
         </Box>
 
-        <Links />
+        <Links direction="row" />
       </main>
     </Container>
   )

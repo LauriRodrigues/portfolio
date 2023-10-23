@@ -6,9 +6,9 @@ import Email from '../../assets/Email.svg'
 import Instagram from '../../assets/Instagram.svg'
 import Twitch from '../../assets/Twitch.svg'
 
-export function Links() {
+export function Links({ direction }) {
   return (
-    <Container>
+    <Container className={direction}>
       <Link
         url="https://www.linkedin.com/in/lauriana-rodrigues/"
         linkIcon={Linkedin}
