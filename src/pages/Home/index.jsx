@@ -1,6 +1,6 @@
 import { Container } from './styles'
-import { Links } from '../../components/Links'
 import HomeImage from '../../assets/HomeImage.svg'
+import { Links } from '../../components/Links'
 
 export function Home() {
   return (
