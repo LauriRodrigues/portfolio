@@ -20,7 +20,7 @@ export function Home() {
           </div>
         </div>
 
-        <Links />
+        <Links direction="column" />
       </main>
     </Container>
   )
