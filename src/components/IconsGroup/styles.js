@@ -8,4 +8,5 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 4.5rem;
+  margin-bottom: 2rem;
 `

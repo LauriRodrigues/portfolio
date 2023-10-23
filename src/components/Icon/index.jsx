@@ -1,8 +1,8 @@
 import { Container } from './styles'
 
-export function Icon({ iconName, textIcon }) {
+export function Icon({ iconName, textIcon, iconSize }) {
   return (
-    <Container>
+    <Container className={iconSize}>
       <img src={iconName} alt="" />
       <p>{textIcon}</p>
     </Container>

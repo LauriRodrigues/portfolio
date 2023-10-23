@@ -20,7 +20,7 @@ import Books from '../../assets/Books.svg'
 import Music from '../../assets/music.svg'
 import Games from '../../assets/Games.svg'
 
-export function IconsGroup({ groupType }) {
+export function IconsGroup({ groupType, iconSize }) {
   let iconsToRender = null
 
   if (groupType === 'hardskillsIcons') {
@@ -51,14 +51,24 @@ export function IconsGroup({ groupType }) {
   } else if (groupType === 'curiositiesIcons') {
     iconsToRender = (
       <Container>
-        <Icon iconName={Cats} textIcon="Amo gatos e tenho 3!!" />
         <Icon
+          iconSize="bigIcon"
+          iconName={Cats}
+          textIcon="Amo gatos e tenho 3!!"
+        />
+        <Icon
+          iconSize="bigIcon"
           iconName={Books}
           textIcon="Gosto muito de ler e estou sempre com um livrinho por perto.  Se tiver curiosidade de saber quais livros já li e estou lendo é só acessar minha página do Notion clicando aqui que deixo tudo registrado por lá!!"
         />
-        <Icon iconName={Music} textIcon="Sempre gostei muito de cantar!!" />
+        <Icon
+          iconSize="bigIcon"
+          iconName={Music}
+          textIcon="Sempre gostei muito de cantar!!"
+        />
 
         <Icon
+          iconSize="bigIcon"
           iconName={Games}
           textIcon="Também tenho como hobbie jogos online. Sempre que da um tempinho eu to jogando alguma coisa!! Inclusive já trabalhei por dois anos como Streamer de League of Legends na Twitch!!"
         />

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { DEVICE } from '../../styles/brakepoints'
 
 export const Container = styled.div`
   display: flex;
@@ -8,5 +9,20 @@ export const Container = styled.div`
 
   img {
     height: 5.5rem;
+  }
+
+  &.bigIcon {
+    img {
+      height: 10rem;
+      width: 10rem;
+    }
+  }
+
+  ${DEVICE.lg} {
+    &.bigIcon {
+      flex-direction: row;
+      margin-inline: 4rem;
+      gap: 2.5rem;
+    }
   }
 `
