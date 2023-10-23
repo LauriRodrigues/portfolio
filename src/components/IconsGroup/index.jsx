@@ -20,7 +20,7 @@ import Books from '../../assets/Books.svg'
 import Music from '../../assets/music.svg'
 import Games from '../../assets/Games.svg'
 
-export function IconsGroup({ groupType, iconSize }) {
+export function IconsGroup({ groupType }) {
   let iconsToRender = null
 
   if (groupType === 'hardskillsIcons') {
