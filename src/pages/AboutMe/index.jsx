@@ -2,6 +2,7 @@ import { Container } from './styles.js'
 import { Box } from '../../components/Box'
 import { Icon } from '../../components/Icon'
 import { IconsGroup } from '../../components/IconsGroup'
+import { Links } from '../../components/Links'
 import AboutMeImage from '../../assets/AboutMeImage.svg'
 import Html from '../../assets/Html.svg'
 import Css from '../../assets/Css.svg'
@@ -22,11 +23,6 @@ import Cats from '../../assets/Cats.svg'
 import Books from '../../assets/Books.svg'
 import Music from '../../assets/music.svg'
 import Games from '../../assets/Games.svg'
-import Linkedin from '../../assets/Linkedin.svg'
-import Github from '../../assets/Github.svg'
-import Email from '../../assets/Email.svg'
-import Instagram from '../../assets/Instagram.svg'
-import Twitch from '../../assets/Twitch.svg'
 
 export function AboutMe() {
   return (
@@ -125,47 +121,7 @@ export function AboutMe() {
           </IconsGroup>
         </Box>
 
-        <div className="links">
-          <a
-            href="https://www.linkedin.com/in/lauriana-rodrigues/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Linkedin} alt="Ícone Linkedin" />
-          </a>
-
-          <a
-            href="https://github.com/LauriRodrigues"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Github} alt="Ícone Github" />
-          </a>
-
-          <a
-            href="mailto:laurianarodrigueslima@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Email} alt="Ícone Email" />
-          </a>
-
-          <a
-            href="https://www.instagram.com/laurirodrigues2/?theme=dark"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Instagram} alt="Ícone Instagram" />
-          </a>
-
-          <a
-            href="https://www.twitch.tv/lauri_rodrigues"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Twitch} alt="Ícone Twitch" />
-          </a>
-        </div>
+        <Links />
       </main>
     </Container>
   )

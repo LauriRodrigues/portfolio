@@ -55,19 +55,6 @@ export const Container = styled.div`
         }
       }
     }
-
-    .links {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      gap: 1.5rem;
-      margin-top: 24rem;
-
-      a img {
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
-      }
-    }
   }
 
   ${DEVICE.lg} {
@@ -78,26 +65,6 @@ export const Container = styled.div`
       align-items: center;
       justify-content: space-between;
       gap: 5rem;
-
-      .links {
-        flex-direction: column;
-        margin-top: 0;
-
-        a {
-          background-color: ${({ theme }) => theme.COLORS.PINK_300};
-          border-radius: 999rem;
-          width: 5.6rem;
-          height: 5.6rem;
-          display: flex;
-          justify-content: center;
-          transition: all 0.2s;
-        }
-
-        a:hover {
-          background-color: ${({ theme }) => theme.COLORS.PINK_200};
-          transform: scale(1.1);
-        }
-      }
 
       .boxImage {
         position: initial;
