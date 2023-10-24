@@ -18,7 +18,9 @@ export function AboutMe() {
             há pouco mais de um ano iniciei minha jornada como desenvolvedora
             web com foco em front-end. Tenho me apaixonado cada dia mais pela
             criação de experiências visuais envolventes e interativas."
-        ></Box>
+        >
+          <img src={AboutMeImage} alt="avatar Lauri Rodrigues" />
+        </Box>
 
         <Box
           title="Hardskills"

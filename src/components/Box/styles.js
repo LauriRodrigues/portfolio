@@ -17,9 +17,16 @@ export const Container = styled.div`
 
   &.onlyImage {
     padding: 0;
+    display: visible;
 
     h1,
     p {
+      display: none;
+    }
+  }
+
+  &.imageWithText {
+    img {
       display: none;
     }
   }
@@ -42,5 +49,26 @@ export const Container = styled.div`
   ${DEVICE.lg} {
     max-width: 100rem;
     margin-block: 10rem;
+
+    &.onlyImage {
+      display: none;
+    }
+
+    &.imageWithText {
+      position: relative;
+      align-items: flex-start;
+      padding: 6.3rem 4rem;
+
+      h1,
+      p {
+        width: 68%;
+      }
+
+      img {
+        display: flex;
+        position: absolute;
+        right: 5%;
+      }
+    }
   }
 `

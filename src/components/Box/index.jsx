@@ -4,16 +4,11 @@ import { Container } from './styles'
 export function Box({ title, text, children }) {
   const childElements = React.Children.toArray(children)
 
+  const hasH1 = typeof title === 'string'
+  const hasP = typeof text === 'string' || React.isValidElement(text)
+
   const hasImage = childElements.some(
     (child) => React.isValidElement(child) && child.type === 'img',
-  )
-
-  const hasH1 = childElements.some(
-    (child) => React.isValidElement(child) && child.type === 'h1',
-  )
-
-  const hasP = childElements.some(
-    (child) => React.isValidElement(child) && child.type === 'p',
   )
 
   let className = ''
