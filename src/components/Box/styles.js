@@ -57,7 +57,7 @@ export const Container = styled.div`
     &.imageWithText {
       position: relative;
       align-items: flex-start;
-      padding: 6.3rem 4rem;
+      padding: 6.5rem 4rem;
 
       h1,
       p {
