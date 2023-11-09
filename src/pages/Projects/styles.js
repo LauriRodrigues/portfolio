@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
 
   main {
-    padding: 3.5rem 2rem;
+    padding: 0 2rem 3.5rem;
     margin: auto;
   }
 `

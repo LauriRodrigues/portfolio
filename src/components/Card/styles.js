@@ -5,7 +5,6 @@ export const Container = styled.div`
   height: 39rem;
   background-color: ${({ theme }) => theme.COLORS.BLUE_300};
   border-radius: 13px;
-  margin-top: 4rem;
 
   .projectImage {
     width: 25.6rem;

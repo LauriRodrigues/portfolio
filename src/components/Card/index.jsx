@@ -1,10 +1,6 @@
 import { Container } from './styles'
 import PreviewSVG from '../../assets/PreviewLink.svg'
 import GithubSVG from '../../assets/Github.svg'
-import Html from '../../assets/Html.svg'
-import Css from '../../assets/Css.svg'
-import Js from '../../assets/Js.svg'
-import React from '../../assets/React.svg'
 
 export function Card({
   cardImage,
@@ -12,6 +8,7 @@ export function Card({
   cardText,
   previewLink,
   codeLink,
+  icons,
 }) {
   return (
     <Container>
@@ -22,10 +19,9 @@ export function Card({
           <p>{cardText}</p>
         </div>
         <div className="cardIcons">
-          <img src={Html} alt="" />
-          <img src={Css} alt="" />
-          <img src={Js} alt="" />
-          <img src={React} alt="" />
+          {icons.map((icon, index) => (
+            <img key={index} src={icon} alt="" />
+          ))}
         </div>
         <div className="cardLinks">
           <div className="cardLink">
