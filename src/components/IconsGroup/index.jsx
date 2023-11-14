@@ -17,7 +17,7 @@ import Feedback from '../../assets/Feedback.svg'
 import Creativity from '../../assets/Creativity.svg'
 import Cats from '../../assets/Cats.svg'
 import Books from '../../assets/Books.svg'
-import Music from '../../assets/music.svg'
+import Music from '../../assets/Music.svg'
 import Games from '../../assets/Games.svg'
 
 export function IconsGroup({ groupType }) {

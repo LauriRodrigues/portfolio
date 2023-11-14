@@ -94,7 +94,7 @@ export const Container = styled.header`
   }
 
   .menu {
-    z-index: 1000000;
+    z-index: ${(props) => (props.isOpen ? '1000000' : '-1')};
     width: 100%;
     padding-top: 3rem;
     background-color: ${({ theme }) => theme.COLORS.BLUE_300};
