@@ -45,7 +45,7 @@ export const cardData = [
   {
     cardImage: RocketNotes,
     cardTitle: 'RocketNotes',
-    cardText: 'Aplicação de cadastro e filtro de notas. (não responsivo)',
+    cardText: 'Aplicação de cadastro e filtro de notas.',
     icons: htmlCssJsReactNode,
     previewLink: 'https://rocketnotes-react.netlify.app/',
     codeLink: 'https://github.com/LauriRodrigues/RocketNotes-front'
