@@ -19,7 +19,7 @@ export const cardData = [
     cardImage: IgniteTimer,
     cardTitle: 'Ignite Timer',
     cardText:
-      'Aplicação de timer, onde colocamos o nome da tarefa e o tempo de foco. Temos também uma página de acesso aos timers passados. (não responsivo)',
+      'Timer onde colocamos o nome da tarefa e o tempo de foco. Temos também uma página de acesso aos timers passados. (não responsivo)',
     icons: htmlCssJsReact,
     previewLink: 'https://ignitetimerreact.netlify.app/',
     codeLink: 'https://github.com/LauriRodrigues/Ignite-Timer'
@@ -47,6 +47,7 @@ export const cardData = [
     cardTitle: 'RocketNotes',
     cardText: 'Aplicação de cadastro e filtro de notas.',
     icons: htmlCssJsReactNode,
+    previewLink: 'https://ignitetimerreact.netlify.app/',
     codeLink: 'https://github.com/LauriRodrigues/RocketNotes-front'
   },
   {
