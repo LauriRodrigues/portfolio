@@ -24,16 +24,27 @@ export function AboutMe() {
 
         <Box
           title="Hardskills"
-          text="Meu foco principal está no desenvolvimento front-end, onde crio
-            interfaces responsivas que resultem em uma boa experiência de
-            usuário. Por isso, a busca por conhecimento é uma prioridade pra
-            mim. Recentemente concluí o curso ‘Explorer’ (clique para mais
-            detalhes) da Rocketseat, que me proporcionou uma visão mais ampla e
-            uma sólida formação em desenvolvimento fullstack, me fazendo
-            compreender a integração entre as diferentes camadas de uma
-            aplicação, além de aprimorar minhas habilidades tanto no front-end
-            quando no back-end. Abaixo estão as tecnologias que mais utilizo no
-            meu dia a dia de estudos e projetos registrados no meu Github."
+          text={
+            <p>
+              Meu foco principal está no desenvolvimento front-end, onde crio
+              interfaces responsivas que resultem em uma boa experiência de
+              usuário. Por isso, a busca por conhecimento é uma prioridade pra
+              mim. Recentemente concluí o curso{' '}
+              <a
+                href="https://www.rocketseat.com.br/formacao/fullstack"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Explorer
+              </a>{' '}
+              da Rocketseat, que me proporcionou uma visão mais ampla e uma
+              sólida formação em desenvolvimento fullstack, me fazendo
+              compreender a integração entre as diferentes camadas de uma
+              aplicação, além de aprimorar minhas habilidades tanto no front-end
+              quando no back-end. Abaixo estão as tecnologias que mais utilizo
+              no meu dia a dia de estudos e projetos registrados no meu Github.
+            </p>
+          }
         >
           <IconsGroup groupType="hardskillsIcons" />
         </Box>

@@ -7,6 +7,12 @@ export const Container = styled.div`
   align-items: center;
   gap: 1rem;
 
+  a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+  }
+
   img {
     height: 5.5rem;
   }

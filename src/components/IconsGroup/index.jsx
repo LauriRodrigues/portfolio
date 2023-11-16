@@ -59,7 +59,21 @@ export function IconsGroup({ groupType }) {
         <Icon
           iconSize="bigIcon"
           iconName={Books}
-          textIcon="Gosto muito de ler e estou sempre com um livrinho por perto.  Se tiver curiosidade de saber quais livros já li e estou lendo é só acessar minha página do Notion clicando aqui que deixo tudo registrado por lá!!"
+          textIcon={
+            <p>
+              Gosto muito de ler e estou sempre com um livrinho por perto. Se
+              tiver curiosidade de saber quais livros já li e estou lendo é só
+              acessar minha página do Notion clicando{' '}
+              <a
+                href="https://hollow-cartwheel-447.notion.site/Library-68f8c61810ad4ae1941f30537c7857c2?pvs=4"
+                target="_blank"
+                rel="noreferrer"
+              >
+                aqui
+              </a>{' '}
+              que deixo tudo registrado por lá!!
+            </p>
+          }
         />
         <Icon
           iconSize="bigIcon"

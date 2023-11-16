@@ -14,6 +14,12 @@ export const Container = styled.div`
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 5rem;
   text-align: center;
+  
+  a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+  }
 
   &.onlyImage {
     padding: 0;
